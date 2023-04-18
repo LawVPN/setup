@@ -1,4 +1,5 @@
 #!/bin/bash
+clear
 
 echo "Script by LawNET"
 sleep 5
@@ -16,11 +17,13 @@ sleep 3
 service ssh restart
 service sshd restart
 sleep 5
+clear
 
 apt update
 apt install vnstat -y
 apt install htop -y
 apt upgrade -y
+vnstat
 sleep 5
 
 cd
